@@ -7,10 +7,13 @@ class Summary extends React.Component {
 
     return (
       <React.Fragment>
+        <h3>SUMMARY</h3>
         <ul>
-          <li>{this.props.unique_orders.length} - Orders </li>
-          <li>{this.props.customers.length} K - Customers: </li>
-          <li>{this.props.total_revenue.toString()} € Global revenue </li>
+          <li>Global revenue: {this.props.total_revenue.toString()} €</li>
+{/*          <li>Items sold: {this.props.orders_count}</li>*/}
+          <li>Orders: {this.props.unique_orders}</li>
+          <li>Average revenue per order: {this.props.average_revenue.toString()} - €</li>
+          <li>Customers: {this.props.customers} in {this.props.number_of_countries} countries  </li>
         </ul>
 
       </React.Fragment>

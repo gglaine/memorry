@@ -3,18 +3,14 @@ import React from "react"
 
 class Summary extends React.Component {
 
-
-
     render () {
-
-    const orders = this.props.orders;
 
     return (
       <React.Fragment>
         <ul>
-          <li>Total revenue: {orders.length.toString()} </li>
-          <li>Customers: </li>
-          <li>Average revenue per order:</li>
+          <li>{this.props.unique_orders.length} - Orders </li>
+          <li>{this.props.customers.length} K - Customers: </li>
+          <li>{this.props.total_revenue.toString()} € Global revenue </li>
         </ul>
 
       </React.Fragment>

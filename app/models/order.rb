@@ -6,7 +6,4 @@ class Order < ApplicationRecord
     @unit_price * quantity
   end
 
-
-
-
 end

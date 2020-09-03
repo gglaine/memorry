@@ -1,14 +1,14 @@
-# README
+# README 🎉🥳
 
-Hello ! This APP does
+Hello ! This is a rails and react app. It does :
+
 - take in 10000 items from a json file that lives in db/ folder to seed db with order-items
   (change or cancel limit in seed.rb file)
 - render a react-rails-generated Summary component that receives props from rails controller
+- use Victory to generate charts that make for some graphic content
 
-This app should:
+It should do :
 - let a user get data for selected country
-- render a second component showing data-viz
-- look better (semantic-ui not working for some reason)
 
 
 
@@ -19,7 +19,7 @@ This app should:
 
 * Configuration
   add react-rails to gemfile
-  follow instructions
+  follow instructions to install
 
 * Database creation
   run rails db:create
@@ -29,10 +29,10 @@ This app should:
 
 * Deployment instructions
 
-  run rails s - to launch rails server
+  run rails s - to launch rails server 👀
   run bin/webpack-dev-server in a second terminal window to run dev server
 
   fork or clone repo
   seed db with json file
 
-* ...
+* ... stay safe 😷

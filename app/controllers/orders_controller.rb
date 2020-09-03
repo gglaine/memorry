@@ -5,22 +5,13 @@ class OrdersController < ApplicationController
 
 
 
-    # start_date = "2010-12-01 08:26:00"
-
-    # @date_a = DateTime.parse(start_date).strftime("%Y-%m-%d")
-
-    # end_date = "2010-12-31 08:26:00"
-
-    # @date_b = DateTime.parse(end_date).strftime("%Y-%m-%d")
-       #group Q1 orders
+    #######################################
+    # ORDERS PLACED AT Q1/4
     qone_orders = []
     qtwo_orders = []
     qthree_orders = []
     qfour_orders = []
-
-
     # TODO replace with range of dates
-
     @qone = Order.where(id: 1 .. 2500)
     @qtwo = Order.where(id: 2501 .. 5000)
     @qthree = Order.where(id: 5001 .. 7500)
@@ -65,7 +56,6 @@ class OrdersController < ApplicationController
       puts "---------------"
     end
 
-
     # Compute price of each individual order-item
     @orders.each do |item|
       price = item["unit_price"] * item["quantity"]
@@ -95,6 +85,5 @@ class OrdersController < ApplicationController
     # @france_orders = Order.where(country: "France" )
     react_rails_prerenderer
 
-    # @february = Order.w
   end
 end
